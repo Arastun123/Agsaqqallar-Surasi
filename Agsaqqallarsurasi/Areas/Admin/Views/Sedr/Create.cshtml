@@ -1,0 +1,36 @@
+﻿@model CreateSedrVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Yeni məlumat əlavə edin</h1>
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div asp-validation-summary="ModelOnly"></div>
+
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+                
+                <div class="form-group">
+                    <label asp-for="FullName">Ad (məlumat əlavə olunması vacibdir)</label>
+                    <input asp-for="FullName" class="form-control" placeholder="FullName">
+                    <span class="text text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Əlavə məlumat (məlumat əlavə olunması vacibdir)</label>
+                    <input asp-for="Description" class="form-control" placeholder="Description">
+                    <span class="text text-danger" asp-validation-for="Description"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Photo">Şəkil (məlumat əlavə olunması vacibdir)</label>
+                    <input asp-for="Photo" class="form-control bg-dark" placeholder="Photo">
+                    <span class="text text-danger" asp-validation-for="Photo"></span>
+                </div>
+                <button type="submit" class="btn btn-primary me-2 text-light">Təsdiq et</button>
+                <button class="btn btn-light" asp-action="Index">Geriyə qayıt</button>
+
+            </form>
+        </div>
+        </div>
+        </div>

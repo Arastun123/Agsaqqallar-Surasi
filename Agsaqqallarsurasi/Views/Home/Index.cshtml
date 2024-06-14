@@ -1,0 +1,209 @@
+﻿@using Agsaqqallarsurasi.ViewModels
+@using System.Globalization
+@model HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/assets/imgs/facicon.png" sizes="32x32" />
+    <link rel="icon" href="~/assets/imgs/facicon.png" sizes="192x192" />
+    <link rel="stylesheet" href="~/assets/style/reset.css">
+    <link rel="stylesheet" href="~/assets/style/main.css">
+    <link rel="stylesheet" href="~/assets/style/index.css">
+    <link rel="stylesheet" href="~/assets/style/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <title>ƏSAS SƏHİFƏ - AZƏRBAYCAN RESPUBLİKASI AĞSAQQALLAR ŞURASI</title>
+</head>
+
+<body>
+    <header>
+        <div id="topArea" class="container">
+            <div class="d-flex j-between">
+                <div class="leftImg img">
+                    <img src="~/assets/imgs/left.png" alt="Left side image" />
+                </div>
+                <div class="logo img">
+                    <a asp-action="Index" asp-controller="Home">
+                        <img src="~/assets/imgs/logo.png" alt="Logo" />
+                    </a>
+                </div>
+                <div class="rightImg img">
+                    <img src="~/assets/imgs/right.png" alt="Right side image" />
+                </div>
+            </div>
+            <div class="d-flex j-between" id="bottomArea">
+                <div id="mainName">
+                    <h1>
+                        İMİŞLİ RAYON AĞSAQQALLAR ŞURASI
+                    </h1>
+                </div>
+                <div class="icons">
+                    <ul id="icons" class="d-flex j-right">
+                        <li><a href="https://www.facebook.com/profile.php?id=61560177795811" target="_blank"> <i class="fab fa-facebook-f" style="background: #365493;"></i> </a></li>
+                        <li><a href="" target="_blank"> <i class="fab fa-twitter" style="background: #33ccff;"></i> </a></li>
+                        <li><a href="" target="_blank"> <i class="fab fa-linkedin-in" style="background: #365493;"></i> </a></li>
+                        <li><a href="" target="_blank"> <i class="fab fa-whatsapp" style="background: #1ebea5;"></i> </a></li>
+                        <li><a href="" target="_blank"> <i class="fab fa-telegram-plane" style="background: #37aee2;"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav id="navbar" class="continer">
+            <div class="nav">
+                <div class="burger-menu">
+                    <button id="burgerMenu"> ☰ </button>
+                </div>
+                <ul id="menu" class="d-flex j-between">
+                    <li> <a asp-action="Index" asp-controller="Home">Əsas səhifə</a> </li>
+                    <li> <a asp-action="Index" asp-controller="About">Haqqımızda</a> </li>
+                    <li> <a asp-action="Index" asp-controller="Surasedr">Sədr</a> </li>
+                    <li class="dropdown-toggle">
+                        <a href="#">Rəhbər Struktur</a>
+                        <ul class="dropdown">
+                            <li><a asp-action="Index" asp-controller="RayonMuavin" class="dropdown-link">Müavinlər</a> </li>
+                            <li><a asp-action="Index" asp-controller="RayonHeyet" class="dropdown-link">İdarə Heyəti</a></li>
+                        </ul>
+                    </li>
+                    <li> <a asp-action="Index" asp-controller="News">Xəbərlər</a> </li>
+                    <li> <a asp-action="Index" asp-controller="Contact">Əlaqə</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section id="carousel-area">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                    @foreach (var item in Model.News.OrderByDescending(x => x.Id).Take(3))
+                    {
+                        <div class="carousel-item active img">
+                                           <a asp-controller="News" asp-action="Details" asp-route-id="@item.Id"><img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path"alt="Image 1" ></a>
+                                <div class="carousel-caption">
+                                    <h3>@item.Title</h3>
+                                </div>
+                            </div>
+                    }
+
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+                    <button class="carousel-control next" onclick="nextSlide()">❯</button>
+                </div>
+                <div id="mainNews">
+                     @foreach (var item in Model.News.OrderBy(x => x.Id).Take(2))  
+                    {
+                        <a asp-action="Details" asp-controller="News" asp-route-id="@item.Id" class="card img">
+                        <img src="~/assets/imgs/@item.NewsImages.OrderBy(x=>x.IsActive).FirstOrDefault()?.Path" alt="">
+                    </a>
+                    }
+                </div>
+                <div id="links" class="d-flex j-between">
+                    <a href="https://president.az/" target="_blank" class="card img">
+                        <img src="~/assets/imgs/ialyev.png" alt="">
+                    </a>
+                    <a href="https://mehriban-aliyeva.az/" target="_blank" class="card img">
+                        <img src="~/assets/imgs/maliyeva.png" alt="">
+                    </a>
+                    <a href="https://heydar-aliyev-foundation.org/az" target="_blank" class="card img">
+                        <img src="~/assets/imgs/hfond.png" alt="">
+                    </a>
+                    <a href="https://agsaqqallarsurasi.az/" target="_blank" class="card img" style="width: 10vw;">
+                        <img src="~/assets/imgs/logo.png" alt="">
+                        <p class="main-link">Azərbaycan Respublikası Ağsaqqallar Şurası</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="news">
+                <h4>Xəbərlər</h4>
+                <div id="newsArea" class="row">
+                            @foreach (var item in Model.News.OrderByDescending(x => x.Id).Take(8))
+                            {
+                                 <article class="news-card img col-4 fleft">
+                                            <a asp-action="Details" asp-controller="News" asp-route-id="@item.Id" class="img">
+                                     <img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path" alt="News Image" />
+                                    </a>
+                                    <p class="news-date">
+                                            <span>@item.DateTime.ToString("d MMM yyyy",new CultureInfo("az-AZ"))</span>
+                                       
+                                    </p>
+                                    <p class="news-desc">
+                                                @item.Title
+                                    </p>
+                                </article>
+                            }
+                </div>
+            </section>
+
+            <section>
+                <h4>Təbriklər</h4>
+                <div class="owl-carousel">
+                    @foreach (Congrats item in Model.Congrats)
+                    {
+                        <a asp-action="Details" asp-controller="Congrats" asp-route-id="@item.Id"  class="item">
+                        <img src="~/assets/imgs/@item.ImagePath" alt="">
+                        <p class="item-desc">@item.FullName – @item.Age</p>
+                        </a>
+                    }
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container footerContent">
+            <div class="row">
+                <div class="logo col-4 fleft">
+                    <a href="index.htm" class="img">
+                        <img src="~/assets/imgs/logo.png" alt="">
+                    </a>
+                    <h2>AZƏRBAYCAN RESPUBLİKASI AĞSAQQALLAR ŞURASI</h2>
+                </div>
+                <div class="navigation col-4 fleft list">
+                    <h5>Naviqasiya</h5>
+                    <ul class="d-flex j-between">
+                        <li><i class="fas fa-angle-double-right"></i> <a asp-action="Index" asp-controller="Home">Ana səhifə</a> </li>
+                        <li><i class="fas fa-angle-double-right"></i> <a asp-action="Index" asp-controller="About">Haqqımızda</a> </li>
+                        <li><i class="fas fa-angle-double-right"></i> <a asp-action="Index" asp-controller="Sedr">Sədr</a> </li>
+                        <li><i class="fas fa-angle-double-right"></i> <a asp-action="Index" asp-controller="News">Xəbərlər</a> </li>
+                        <li><i class="fas fa-angle-double-right"></i> <a asp-action="Index" asp-controller="Contact">Əlaqə</a> </li>
+                    </ul>
+                </div>
+                <div class="col-4 fleft list">
+                    <h5>Əlaqə</h5>
+                    <ul class="d-flex j-between">
+                        <li class="d-flex j-between"> 
+                            <span><i class="fas fa-map-marker-alt"></i></span> 
+                            <span>İmişli şəhəri 20 yanvar küçəsi 11</span>
+                        </li>
+                        <li class="d-flex j-between">
+                            <span><i class="fas fa-phone-alt"></i></span>
+                            <span>
+                                <p>050-986-05-75</p>
+                            </span>
+                        </li>
+                        <li class="d-flex j-between">
+                            <span><i class="fas fa-envelope"></i></span> 
+                            <span>asurasi@mail.ru</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/edff80f9e7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>

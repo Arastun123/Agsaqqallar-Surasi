@@ -1,0 +1,64 @@
+﻿@model List<News>
+@{
+	ViewData["Title"] = "Index";
+
+	int count = 1;
+}
+
+<div class="d-flex justify-content-end mb-2">
+	<a class="btn btn-success text-light" asp-area="Admin" asp-controller="News" asp-action="Create">Yeni məlumat yarat</a>
+</div>
+<div class="col-lg-12 grid-margin stretch-card">
+	<div class="card">
+		<div class="card-body">
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>N</th>
+							<th>Tarix</th>
+							<th>Başlıq</th>
+							<th>Mətn</th>
+							<th>Şəkillər</th>
+							<th>Əməliyyat</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var news in Model)
+						{ 
+						<tr>
+								<td>@count</td>
+								<td>@news.DateTime</td>
+								<td>@news.Title</td>
+								<td>@news.Description</td>
+								<td><img src="~/assets/imgs/@news.NewsImages.FirstOrDefault(s=>s.IsActive).Path" style="height:140px; width:140px;" alt="News Image" /></td>
+								<td>
+									@foreach (var image in news.NewsImages.Where(s =>!s.IsActive))
+									{
+										<img src="@Url.Content("~/assets/imgs/" + image.Path)" style="height:140px; width:140px; margin: 10px;" alt="News Image" />
+									}
+								</td>
+								<td>
+									<a asp-area="Admin" asp-controller="News" asp-action="Delete" asp-route-id="@news.Id" class="btn btn-danger text-light m-3">Sil</a>
+								</td>
+							</tr>
+							count++;
+						}
+					</tbody>
+				</table>				
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function showFirstTwoSentences() {
+		let fullDescription = document.getElementById('fullDescription').innerText;
+		let sentences = fullDescription.match(/[^.!?]+[.!?]+/g) || [];
+		let firstTwoSentences = sentences.slice(0, 2).join(' ');
+		document.getElementById('descriptionCell').innerText = firstTwoSentences;
+	}
+
+	document.addEventListener('DOMContentLoaded', (event) => {
+		showFirstTwoSentences();
+	});
+</script>
