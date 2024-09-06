@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="~/assets/style/main.css">
 	<link rel="stylesheet" href="~/assets/style/bootstrap.css">
 	<link rel="stylesheet" href="~/assets/style/about.css">
+
 	<title>SƏDR - AZƏRBAYCAN RESPUBLİKASI AĞSAQQALLAR ŞURASI</title>
 </head>
 
@@ -80,7 +81,7 @@
 					<li> <a asp-action="Index" asp-controller="About">Haqqımızda</a> </li>
 					<li> <a asp-action="Index" asp-controller="Surasedr">Sədr</a> </li>
 					<li class="dropdown-toggle">
-						<a href="#">Rəhbər Struktur</a>
+						<a href="#">Rəhbər Struktur <i class="fas fa-chevron-down"></i></a>
 						<ul class="dropdown">
 							<li><a asp-action="Index" asp-controller="RayonMuavin" class="dropdown-link">Müavinlər</a> </li>
 							<li><a asp-action="Index" asp-controller="RayonHeyet" class="dropdown-link">İdarə Heyəti</a></li>
@@ -102,8 +103,8 @@
 						<img src="~/assets/imgs/@Model.ImagePath" alt="" class="img">
 					</div>
 					<div id="text">
-						<p>@Model.Description</p>
-
+						<p id="deatil-text">@Model.Description</p>
+						<div id="new-paragraphs"></div>
 					</div>
 				</div>
 

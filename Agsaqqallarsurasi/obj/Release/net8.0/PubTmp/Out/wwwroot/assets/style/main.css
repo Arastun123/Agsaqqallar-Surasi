@@ -46,7 +46,7 @@ body {
 /* text styles */
 
 h1 {
-    color: var(--light-blue);
+    color: var(--black);
     font-size: 1.2em;
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -296,6 +296,19 @@ footer .logo {
     padding: 10px;
     width: 95%;
     margin: 20px auto;
+}
+
+.main-link {
+    padding: 10px 0;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.link-logo img {
+    width: 50%;
 }
 
 @media only screen and (min-width:998px) {

@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-window.onscroll = function() {
-    var navbar = document.getElementById("navbar");
-    if (window.pageYOffset > 100) {
-        navbar.classList.add("fixed");
-    } else {
-        navbar.classList.remove("fixed");
-    }
-};
+//window.onscroll = function() {
+//    var navbar = document.getElementById("navbar");
+//    if (window.pageYOffset > 100) {
+//        navbar.classList.add("fixed");
+//    } else {
+//        navbar.classList.remove("fixed");
+//    }
+//};
 
 $('.dropdown-toggle').on('click', function(e) {
     // e.preventDefault();

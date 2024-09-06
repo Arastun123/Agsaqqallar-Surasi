@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="~/assets/style/main.css">
 	<link rel="stylesheet" href="~/assets/style/bootstrap.css">
 	<link rel="stylesheet" href="~/assets/style/about.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 	<title>SƏDR - AZƏRBAYCAN RESPUBLİKASI AĞSAQQALLAR ŞURASI</title>
 </head>
 
@@ -80,7 +82,7 @@
 					<li> <a asp-action="Index" asp-controller="About">Haqqımızda</a> </li>
 					<li> <a asp-action="Index" asp-controller="Surasedr">Sədr</a> </li>
 					<li class="dropdown-toggle">
-						<a href="#">Rəhbər Struktur</a>
+						<a href="#">Rəhbər Struktur <i class="fas fa-chevron-down"></i></a>
 						<ul class="dropdown">
 							<li><a asp-action="Index" asp-controller="RayonMuavin" class="dropdown-link">Müavinlər</a> </li>
 							<li><a asp-action="Index" asp-controller="RayonHeyet" class="dropdown-link">İdarə Heyəti</a></li>
@@ -102,15 +104,18 @@
 						<img  src="~/assets/imgs/@Model.NewsImages.FirstOrDefault(s=>s.IsActive).Path" alt="Xəbər Şəkli" class="img">			
 					</div>
 					<div id="text">
-						<p style="line-height:1.5em">@Model.Description</p>
+						<p id="deatil-text" style="line-height:1.5em">@Model.Description</p>
+						<div id="new-paragraphs"></div>
 					</div>
 					<div id="news-imgs">
 						<div class="row">
 							@foreach (var image in Model.NewsImages.Where(x => !x.IsActive))
 							{
-								<div class="col4 img">
+								<a data-fancybox="gallery" data-src="@Url.Content("~/assets/imgs/" + image.Path)"
+                                data-caption=""
+                                class="col4 img box" data-fancybox data-caption="Single image">
 									<img src="@Url.Content("~/assets/imgs/" + image.Path)" alt="Xəbər Şəkli"  />
-								</div>
+								</a>
 							}
 						</div>
 					</div>
@@ -189,6 +194,12 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="~/assets/js/main.js"></script>
 	<script src="~/assets/js/about.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>
+		Fancybox.bind('[data-fancybox="gallery"]', {
+			//
+		});
+	</script>
 </body>
 
 </html>

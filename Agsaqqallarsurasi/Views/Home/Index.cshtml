@@ -66,7 +66,7 @@
                     <li> <a asp-action="Index" asp-controller="About">Haqqımızda</a> </li>
                     <li> <a asp-action="Index" asp-controller="Surasedr">Sədr</a> </li>
                     <li class="dropdown-toggle">
-                        <a href="#">Rəhbər Struktur</a>
+                        <a href="#">Rəhbər Struktur <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown">
                             <li><a asp-action="Index" asp-controller="RayonMuavin" class="dropdown-link">Müavinlər</a> </li>
                             <li><a asp-action="Index" asp-controller="RayonHeyet" class="dropdown-link">İdarə Heyəti</a></li>
@@ -86,11 +86,11 @@
                     @foreach (var item in Model.News.OrderByDescending(x => x.Id).Take(3))
                     {
                         <div class="carousel-item active img">
-                                           <a asp-controller="News" asp-action="Details" asp-route-id="@item.Id"><img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path"alt="Image 1" ></a>
-                                <div class="carousel-caption">
-                                    <h3>@item.Title</h3>
-                                </div>
-                            </div>
+                              <a asp-controller="News" asp-action="Details" asp-route-id="@item.Id"><img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path"alt="Image 1" ></a>
+                              <div class="carousel-caption">
+                                   <h3>@item.Title</h3>
+                              </div>
+                        </div>
                     }
 
                     </div>
@@ -127,7 +127,7 @@
                 <div id="newsArea" class="row">
                             @foreach (var item in Model.News.OrderByDescending(x => x.Id).Take(8))
                             {
-                                 <article class="news-card img col-4 fleft">
+                                 <article class="news-card col-4 fleft">
                                             <a asp-action="Details" asp-controller="News" asp-route-id="@item.Id" class="img">
                                      <img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path" alt="News Image" />
                                     </a>

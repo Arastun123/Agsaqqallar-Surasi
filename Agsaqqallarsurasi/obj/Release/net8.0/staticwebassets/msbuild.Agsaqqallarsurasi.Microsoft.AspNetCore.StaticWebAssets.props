@@ -30256,6 +30256,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\2f94fabb-88e1-4b1b-bcf8-62276c63c30eIMG-20240515-WA0010-1536x1152.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\3342de3d-1acf-493b-80a3-fc86d9467d6c2f0ea2cf-a6f8-4a51-9bc3-02e436bea6d9IMG_20231205_110946.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/3342de3d-1acf-493b-80a3-fc86d9467d6c2f0ea2cf-a6f8-4a51-9bc3-02e436bea6d9IMG_20231205_110946.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\3342de3d-1acf-493b-80a3-fc86d9467d6c2f0ea2cf-a6f8-4a51-9bc3-02e436bea6d9IMG_20231205_110946.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\36da8688-b012-4f41-aadc-ca6c5aa3637as21.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>Agsaqqallarsurasi</SourceId>
@@ -30479,6 +30495,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\4bb4da12-91bd-4dd8-b623-f0c3c84d1e21i2.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\4e1f9db1-345a-4822-b239-8a455ce772282c420700-df5b-4d90-8053-a04b1cb8c00d08a246bf-aae0-4f38-895a-a38722d80fb4eldar.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/4e1f9db1-345a-4822-b239-8a455ce772282c420700-df5b-4d90-8053-a04b1cb8c00d08a246bf-aae0-4f38-895a-a38722d80fb4eldar.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\4e1f9db1-345a-4822-b239-8a455ce772282c420700-df5b-4d90-8053-a04b1cb8c00d08a246bf-aae0-4f38-895a-a38722d80fb4eldar.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\4e4e3fb9-977f-41db-b520-b9899b2df29as5.jpeg))">
       <SourceType>Package</SourceType>
@@ -31456,6 +31488,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\bb4cc9a3-3259-48ac-b8b1-758a08cb1d1br4.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\bbc822d9-0f11-48b0-a45e-36ac55a03b0d2c420700-df5b-4d90-8053-a04b1cb8c00d08a246bf-aae0-4f38-895a-a38722d80fb4eldar.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/bbc822d9-0f11-48b0-a45e-36ac55a03b0d2c420700-df5b-4d90-8053-a04b1cb8c00d08a246bf-aae0-4f38-895a-a38722d80fb4eldar.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\bbc822d9-0f11-48b0-a45e-36ac55a03b0d2c420700-df5b-4d90-8053-a04b1cb8c00d08a246bf-aae0-4f38-895a-a38722d80fb4eldar.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\bbe135e9-a827-440b-88a1-02fda6eab4dce2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Agsaqqallarsurasi</SourceId>
@@ -31487,6 +31535,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\c07b95c2-51c2-4453-9598-9763408dbda5r2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\c2f6db1a-ec08-4cb5-9abd-a004b33a87fa0ffd0a00-c1c9-4154-8aaf-e681aeab46eas.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/c2f6db1a-ec08-4cb5-9abd-a004b33a87fa0ffd0a00-c1c9-4154-8aaf-e681aeab46eas.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\c2f6db1a-ec08-4cb5-9abd-a004b33a87fa0ffd0a00-c1c9-4154-8aaf-e681aeab46eas.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\c361ce8b-4e09-4e20-80fc-5f0dad1ec0a9u7.jpg))">
       <SourceType>Package</SourceType>
@@ -31632,6 +31696,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\d1cc6c0a-daf8-4f8a-b4da-2216bc43d078u5.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\d5da08ca-be97-4510-ac07-0ae0d4f3cd51954ee057-a1eb-4a2e-b7bf-b16bde8255e7s11.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/d5da08ca-be97-4510-ac07-0ae0d4f3cd51954ee057-a1eb-4a2e-b7bf-b16bde8255e7s11.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\d5da08ca-be97-4510-ac07-0ae0d4f3cd51954ee057-a1eb-4a2e-b7bf-b16bde8255e7s11.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\d83344de-76dd-4ecb-b5c5-7f7604e711feresize_550f31c7fe5949883bb38c056ad70256.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Agsaqqallarsurasi</SourceId>
@@ -31775,6 +31855,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\e36a6c44-8a4d-4c51-a621-362b62c9c53dr.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\e5df03cc-486b-4da1-b368-435f2f2c49fb960a3d15-7a97-49fd-94df-3cf40a42b44deldar.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/e5df03cc-486b-4da1-b368-435f2f2c49fb960a3d15-7a97-49fd-94df-3cf40a42b44deldar.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\e5df03cc-486b-4da1-b368-435f2f2c49fb960a3d15-7a97-49fd-94df-3cf40a42b44deldar.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\e7d3938e-30d8-4736-b20b-00d172d633cbIMG-20240515-WA0010-1536x1152.jpg))">
       <SourceType>Package</SourceType>
@@ -32047,6 +32143,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\f75fdee4-180c-465c-bd45-87c76ea859efehliman.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\f88d24d1-06d0-4761-9d6d-93d872063687977bd9e4-5558-478d-8784-fea65b72628eg5.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Agsaqqallarsurasi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Agsaqqallarsurasi</BasePath>
+      <RelativePath>assets/imgs/f88d24d1-06d0-4761-9d6d-93d872063687977bd9e4-5558-478d-8784-fea65b72628eg5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\f88d24d1-06d0-4761-9d6d-93d872063687977bd9e4-5558-478d-8784-fea65b72628eg5.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\fa5238d6-c336-4159-970b-92f11515e9e1r1.jpg))">
       <SourceType>Package</SourceType>
