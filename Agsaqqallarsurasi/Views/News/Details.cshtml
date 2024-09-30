@@ -98,7 +98,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col8 fleft bg-white" id="sedr">
-					<h5>@Model.Title</h5>
+					<h5>
+						<a href="@Url.Action("Details", "News", new { slug = ViewBag.Slug })">@Model.Title</a>
+					</h5>
 					<p id="date">@Model.DateTime.ToString("dd-MM-yyyy")</p> 
 					<div id="img-box">
 						<img  src="~/assets/imgs/@Model.NewsImages.FirstOrDefault(s=>s.IsActive).Path" alt="Xəbər Şəkli" class="img">			

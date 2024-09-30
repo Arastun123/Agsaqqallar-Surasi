@@ -1,4 +1,5 @@
 ﻿@using System.Globalization
+@using Agsaqqallarsurasi.Helpers
 @model List<News>
 @{
     ViewData["Title"] = "News Page";
@@ -99,24 +100,24 @@
                 <div class="col8 fleft bg-white">
                     <h5>Xəbərlər</h5>
                     <div id="article-box">
-                       @foreach (News news in Model)
-                       {
+                        @foreach (var news in Model)
+                        {
                             <article class="news-card">
                                 <div class="news-img">
-                                    <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id" target="_self">
-                                        <img src="~/assets/imgs/@news.NewsImages.FirstOrDefault(s=>s.IsActive).Path" alt="" />
+                                    <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(news.Title)" target="_self">
+                                        <img src="~/assets/imgs/@news.NewsImages.FirstOrDefault(s => s.IsActive).Path" alt="" />
                                     </a>
                                     <div class="date">
-                                        <p>@news.DateTime.ToString("d MMMM",new CultureInfo("az-AZ"))</p>
+                                        <p>@news.DateTime.ToString("d MMMM", new CultureInfo("az-AZ"))</p>
                                     </div>
                                 </div>
                                 <div class="news-desc">
-                                    <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id" target="_self">@news.Title</a>
+                                    <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(news.Title)" target="_self">@news.Title</a>
 
                                     <span>@news.DateTime.ToString("dd.MM.yyyy")</span>
                                 </div>
                             </article>
-                       }
+                        }
                     </div>
                 </div>
                 <div class="col4 fleft links-area bg-white" id="bg-white-mobile">
