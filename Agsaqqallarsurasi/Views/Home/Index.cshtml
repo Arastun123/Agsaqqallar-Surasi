@@ -88,7 +88,7 @@
                     {
                         <div class="carousel-item active img">
                               @* <a asp-controller="News" asp-action="Details" asp-route-id="@item.Id"> *@
-                                    <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(item.Title)" target="_self">
+                                <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(item.Title)" asp-route-hash="@UrlHelpers.GenerateHash(item.Id)" target="_self">
                                   <img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path"alt="Image 1" >
                                   </a>
                               <div class="carousel-caption">
@@ -104,7 +104,7 @@
                 <div id="mainNews">
                      @foreach (var item in Model.News.OrderBy(x => x.Id).Take(2))  
                     {
-                        <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(item.Title)" target="_self" class="card img">
+                        <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(item.Title)" asp-route-hash="@UrlHelpers.GenerateHash(item.Id)" target="_self" class="card img">
                                 
                        @*  <a asp-action="Details" asp-controller="News" asp-route-id="@item.Id" > *@
                         <img src="~/assets/imgs/@item.NewsImages.OrderBy(x=>x.IsActive).FirstOrDefault()?.Path" alt="">
@@ -135,7 +135,7 @@
                             {
                                  <article class="news-card col-4 fleft">
                                          
-                                <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(item.Title)" class="img">
+                                <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(item.Title)" asp-route-hash="@UrlHelpers.GenerateHash(item.Id)" class="img">
 
                                     <img src="~/assets/imgs/@item.NewsImages.OrderByDescending(x => x.IsActive).FirstOrDefault()?.Path" alt="News Image" />
                                     </a>

@@ -99,7 +99,7 @@
 			<div class="row">
 				<div class="col8 fleft bg-white" id="sedr">
 					<h5>
-						<a href="@Url.Action("Details", "News", new { slug = ViewBag.Slug })">@Model.Title</a>
+						<a @* href="@Url.Action("Details", "News", new { slug = ViewBag.Slug })" *@>@Model.Title</a>
 					</h5>
 					<p id="date">@Model.DateTime.ToString("dd-MM-yyyy")</p> 
 					<div id="img-box">
@@ -114,8 +114,7 @@
 							@foreach (var image in Model.NewsImages.Where(x => !x.IsActive))
 							{
 								<a data-fancybox="gallery" data-src="@Url.Content("~/assets/imgs/" + image.Path)"
-                                data-caption=""
-                                class="col4 img box" data-fancybox data-caption="Single image">
+                                data-caption="" class="col4 img box" data-fancybox data-caption="Single image">
 									<img src="@Url.Content("~/assets/imgs/" + image.Path)" alt="Xəbər Şəkli"  />
 								</a>
 							}

@@ -11,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|solutionrelative:agsaqqallarsurasi\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|c:\\users\\77upt\\desktop\\agsaqqallar\\agsaqqallar-surasi\\agsaqqallarsurasi\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|solutionrelative:agsaqqallarsurasi\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|c:\\users\\77upt\\desktop\\agsaqqallar\\agsaqqallar-surasi\\agsaqqallarsurasi\\views\\news\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|solutionrelative:agsaqqallarsurasi\\views\\news\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|c:\\users\\77upt\\desktop\\agsaqqallar\\agsaqqallar-surasi\\agsaqqallarsurasi\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|solutionrelative:agsaqqallarsurasi\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|c:\\users\\77upt\\desktop\\agsaqqallar\\agsaqqallar-surasi\\agsaqqallarsurasi\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|solutionrelative:agsaqqallarsurasi\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C89DC5CC-37D6-4C3F-A762-8100A1FFAE6E}|Agsaqqallarsurasi\\Agsaqqallarsurasi.csproj|c:\\users\\77upt\\desktop\\agsaqqallar\\agsaqqallar-surasi\\agsaqqallarsurasi\\helpers\\urlhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,52 +54,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAAAKYAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T07:49:40.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UrlHelpers.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
-              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
-              "RelativeToolTip": "Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T20:39:50.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\News\\Details.cshtml",
               "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Views\\News\\Details.cshtml",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\News\\Details.cshtml",
               "RelativeToolTip": "Agsaqqallarsurasi\\Views\\News\\Details.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGYAAAAKAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T20:20:30.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NewsController.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Controllers\\NewsController.cs",
-              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Controllers\\NewsController.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Controllers\\NewsController.cs",
-              "RelativeToolTip": "Agsaqqallarsurasi\\Controllers\\NewsController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAqwBoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T20:08:14.039Z",
+              "WhenOpened": "2024-09-30T20:20:30.857Z",
               "EditorCaption": ""
             },
             {
@@ -106,9 +73,61 @@
               "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Views\\News\\Index.cshtml",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\News\\Index.cshtml",
               "RelativeToolTip": "Agsaqqallarsurasi\\Views\\News\\Index.cshtml",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGoAAACXAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHEAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-30T20:07:52.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Controllers\\NewsController.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "Agsaqqallarsurasi\\Controllers\\NewsController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T20:08:14.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UrlHelpers.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
+              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
+              "RelativeToolTip": "Agsaqqallarsurasi\\Helpers\\UrlHelpers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T20:39:50.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Agsaqqallarsurasi\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAAAFMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-01T07:49:40.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\Detail\\Index.cshtml",
+              "RelativeDocumentMoniker": "Agsaqqallarsurasi\\Views\\Detail\\Index.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\Agsaqqallar\\Agsaqqallar-Surasi\\Agsaqqallarsurasi\\Views\\Detail\\Index.cshtml",
+              "RelativeToolTip": "Agsaqqallarsurasi\\Views\\Detail\\Index.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAACQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-01T08:21:49.345Z",
               "EditorCaption": ""
             }
           ]

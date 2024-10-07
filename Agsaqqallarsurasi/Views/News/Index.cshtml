@@ -104,7 +104,7 @@
                         {
                             <article class="news-card">
                                 <div class="news-img">
-                                    <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(news.Title)" target="_self">
+                                    <a asp-controller="News" asp-action="Details" asp-route-hash="@UrlHelpers.GenerateHash(news.Id)" asp-route-slug="@UrlHelpers.GenerateSlug(news.Title)" target="_self">
                                         <img src="~/assets/imgs/@news.NewsImages.FirstOrDefault(s => s.IsActive).Path" alt="" />
                                     </a>
                                     <div class="date">
@@ -112,7 +112,12 @@
                                     </div>
                                 </div>
                                 <div class="news-desc">
-                                    <a asp-controller="News" asp-action="Details" asp-route-slug="@UrlHelpers.GenerateSlug(news.Title)" target="_self">@news.Title</a>
+                                    <a 
+                                        asp-controller="News" asp-action="Details"
+                                       asp-route-hash="@UrlHelpers.GenerateHash(news.Id)"
+                                       asp-route-slug="@UrlHelpers.GenerateSlug(news.Title)" target="_self">
+                                            @news.Title
+                                    </a>
 
                                     <span>@news.DateTime.ToString("dd.MM.yyyy")</span>
                                 </div>

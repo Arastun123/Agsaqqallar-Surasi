@@ -28,15 +28,14 @@ public class NewsController : Controller
 
     }
 
-    [Route("news/{slug}")]
-    public async Task<IActionResult> Details(string slug)
+    [Route("news/{slug}/{hash}")]
+    public async Task<IActionResult> Details(string slug, string hash)
     {
-
         var newsList = await _appDbContext.News
                                           .Include(n => n.NewsImages)
                                           .ToListAsync();
 
-        var news = newsList.FirstOrDefault(n => UrlHelpers.GenerateSlug(n.Title) == slug);
+        var news = newsList.FirstOrDefault(n => UrlHelpers.GenerateHash(n.Id) == hash && UrlHelpers.GenerateSlug(n.Title) == slug);
 
         if (news == null)
         {
@@ -45,6 +44,7 @@ public class NewsController : Controller
 
         return View(news);
     }
+
 
 
 
